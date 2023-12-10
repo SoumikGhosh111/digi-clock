@@ -144,7 +144,7 @@ function hour12FomatFunction(){
         hourTick.innerHTML = `${hh}`;
         minutesTick.innerHTML = `${mm}`;
         seconds.innerHTML = `${ss}`;
-        AmPm.innerHTML = `${amPM[1]}`;
+        AmPm.innerHTML = `${amPM[1].toUpperCase()}`;
         dateData.innerHTML = `${month}, ${weekDay} ${todayDate}`;
 }
 
