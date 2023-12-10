@@ -110,7 +110,8 @@ function hour12FomatFunction(){
         let date = new Date().toDateString();
         let tempArr = date.split(" ");
 
-        let amPM = new Date().toLocaleTimeString().split(" ");
+        // let amPM = new Date().toLocaleTimeString().split(" ");
+         let amPM = currTime.toLocaleTimeString([], { hour12: true, hour: '2-digit', minute: '2-digit' }).split(' ');
 
 
         let weekDay = weekDayOf(tempArr[0]);
